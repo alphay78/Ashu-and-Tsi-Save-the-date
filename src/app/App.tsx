@@ -209,7 +209,7 @@ export default function App() {
           </p>
           <p className="text-center text-lg font-semibold mb-4 text-[#2C2C2C]">ቅዳሜ ህዳር 5</p>
 
-          {/* November 2026: adjusted so 5 is on Saturday */}
+          {/* November 2026: starts Tuesday with 1, empty first 2 days */}
           <div className="grid grid-cols-7 gap-2 text-center text-sm">
             <div className="font-medium">እሁድ</div>
             <div className="font-medium">ሰኞ</div>
@@ -221,12 +221,10 @@ export default function App() {
 
             <div className="py-2"></div>
             <div className="py-2"></div>
-            <div className="py-2"></div>
             <div className="py-2">1</div>
             <div className="py-2">2</div>
             <div className="py-2">3</div>
             <div className="py-2">4</div>
-            <div className="py-2">5</div>
             <div className="py-2 bg-[#D4AF37] text-white rounded-full relative">
               5
               <Heart className="w-3 h-3 absolute -top-1 -right-1 text-red-500" fill="currentColor" />
