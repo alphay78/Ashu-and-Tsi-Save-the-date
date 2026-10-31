@@ -207,6 +207,7 @@ export default function App() {
           <p className="text-center text-[#D4AF37] mb-6" style={{ fontFamily: 'Great Vibes, cursive', fontSize: '1.5rem' }}>
             ቀኑን ያስቀምጡ
           </p>
+          <p className="text-center text-lg font-semibold mb-4 text-[#2C2C2C]">ቅዳሜ ህዳር 5</p>
 
           {/* November 2026: starts on Sunday */}
           <div className="grid grid-cols-7 gap-2 text-center text-sm">
