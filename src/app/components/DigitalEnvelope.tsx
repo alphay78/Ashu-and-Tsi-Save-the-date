@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 interface DigitalEnvelopeProps {
   onOpenComplete: () => void;
-  lang: 'en' | 'am';
+  lang: 'am' | 'en';
   toggleLang: () => void;
 }
 
@@ -20,8 +20,8 @@ const envelopeTranslations = {
   am: {
     invitation: 'የጋብቻ ጥሪ',
     names: 'አሹ እና ፂ',
-    body: 'ከቤተሰቦቻቸው ጋር በመሆን የጋብቻቸውን ሥነ ሥርዓት አብረው እንዲያከብሩ በታላቅ ደስታ ይጋብዟችኋል',
-    date: 'ህዳር ፬ ቀን ፳፻፲፱ ዓ.ም · አዲስ አበባ',
+    body: 'የተወደዳችሁ ቤተስቦቻችን ፣ ጓደኞቻችን የጋብቻችንን ሥነ ሥርዓት አብረው እንዲያከብሩ በታላቅ ደስታ ጋብዘናችኋል',
+    date: 'ህዳር 5 ቀን 2019 ዓ.ም · አዲስ አበባ',
     tapToOpen: 'ለመክፈት ይጫኑ',
     especiallyFor: 'ልዩ ጥሪ ለ',
     defaultGuest: 'ለተከበራችሁ ቤተሰቦቻችንና ወዳጆቻችን'
@@ -132,7 +132,7 @@ export function DigitalEnvelope({ onOpenComplete, lang, toggleLang }: DigitalEnv
           transition={{ duration: 0.5, ease: 'easeIn' }}
         >
           <div className="px-6 py-3 rounded-md bg-[#FDFBF7]/95 border border-[#D4AF37]/50 shadow-[0_12px_30px_rgba(0,0,0,0.15)] flex flex-col items-center min-w-[200px]">
-            <span className="text-[#9B7A2B]/85 text-[9px] tracking-[0.35em] uppercase mb-1.5 font-medium font-sans">
+            <span className="text-[#9B7A2B]/85 text-base tracking-[0.25em] uppercase mb-1.5 font-bold font-sans">
               {currentT.especiallyFor}
             </span>
             <span className="font-cursive text-2xl text-[#7A5C2A] px-2 drop-shadow-sm whitespace-nowrap">
