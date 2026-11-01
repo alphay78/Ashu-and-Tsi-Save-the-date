@@ -255,7 +255,7 @@ export default function App() {
             <div className="py-2">29</div>
             <div className="py-2">30</div>
           </div>
-          <p className="text-center text-lg font-semibold mt-6 text-[#2C2C2C]">ሕ.ሙከ. በ 9:00 LT ይጀምር</p>
+          <p className="text-center text-lg font-semibold mt-6 text-[#2C2C2C]">ከ 9፡00 ጀምሮ</p>
         </div>
       </section>
 
