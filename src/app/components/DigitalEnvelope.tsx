@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 interface DigitalEnvelopeProps {
   onOpenComplete: () => void;
   lang: 'am' | 'en';
-  toggleLang: () => void;
 }
 
 const envelopeTranslations = {
@@ -28,7 +27,7 @@ const envelopeTranslations = {
   }
 };
 
-export function DigitalEnvelope({ onOpenComplete, lang, toggleLang }: DigitalEnvelopeProps) {
+export function DigitalEnvelope({ onOpenComplete, lang }: DigitalEnvelopeProps) {
   const [step, setStep] = useState<'idle' | 'opening' | 'done'>('idle');
   const [guestName, setGuestName] = useState('');
   const [scale, setScale] = useState(1);
@@ -76,25 +75,7 @@ export function DigitalEnvelope({ onOpenComplete, lang, toggleLang }: DigitalEnv
       exit={{ opacity: 0 }}
       transition={{ duration: 1 }}
     >
-      {/* Floating Language Toggle */}
-      {step === 'idle' && (
-        <motion.div 
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="absolute top-6 right-6 z-[120]"
-        >
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              toggleLang();
-            }}
-            className="flex items-center gap-2 px-4 py-2 rounded-full border border-[#D4AF37]/45 bg-[#1c1004]/80 text-[#D4AF37] hover:bg-[#D4AF37] hover:text-white backdrop-blur-md transition-all duration-300 text-xs font-semibold shadow-[0_4px_25px_rgba(0,0,0,0.5)] cursor-pointer"
-          >
-            {lang === 'en' ? '🇪🇹 አማርኛ' : '🇬🇧 EN'}
-          </button>
-        </motion.div>
-      )}
+      {/* Floating Language Toggle - Removed */}
 
       {/* Subtle ambient golden particles */}
       {[...Array(20)].map((_, i) => (

@@ -54,7 +54,6 @@ export default function App() {
           key="envelope"
           onOpenComplete={() => setEnvelopeOpen(true)}
           lang={lang}
-          toggleLang={() => setLang(l => l === 'en' ? 'am' : 'en')}
         />
       )}
       {envelopeOpen && (
