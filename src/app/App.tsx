@@ -10,7 +10,7 @@ export default function App() {
   const [married, setMarried] = useState(false);
 
   useEffect(() => {
-    const weddingDate = new Date('2026-11-14T08:00:00').getTime();
+    const weddingDate = new Date('2026-11-14T15:00:00').getTime();
     const MS_DAY = 1000 * 60 * 60 * 24;
     const MS_YEAR = MS_DAY * 365.25;
 
